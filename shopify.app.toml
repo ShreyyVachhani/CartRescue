@@ -1,3 +1,28 @@
-# This file stores configurations for your Shopify app.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
+client_id = "2ef174c204efb564987cfffd9c5f1ac6"
+name = "CartRescue"
+application_url = "https://doc-commitment-incident-stuffed.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "vachhani0.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
 scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://doc-commitment-incident-stuffed.trycloudflare.com/auth/callback",
+  "https://doc-commitment-incident-stuffed.trycloudflare.com/auth/shopify/callback",
+  "https://doc-commitment-incident-stuffed.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
